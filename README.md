@@ -1,4 +1,23 @@
-# stable-ginv
+# Bachelor project: Stabilizing gradient inversion
+
+> **TL;DR:** DTU bachelor's thesis investigating how images can be reconstructed from shared model gradients, and how gradient masking changes that reconstruction. My work focused on the experiment pipeline, masking logic, GPU execution and statistical analysis.
+
+## My contribution - Alfred Aqraou
+
+- Contributed gradient-masking implementations and tests, including layer-aware masking and separating label inference from the reconstruction mask.
+- Developed and refined experiment tooling for multi-GPU execution, parallel restarts and masking sweeps.
+- Built Jacobian-rank experiments and analysis tools to investigate why reconstruction behaves differently across architectures and settings.
+- Added paired comparisons, normality checks, confidence intervals and visualizations for evaluating reconstruction quality.
+
+This was a three-person thesis project with Ali Afif and Mathias K. E. Sørensen. The bullets describe my contributions to the shared codebase; the research results belong to the team.
+
+**Original team repository:** [MathiasKES/stable-ginv](https://github.com/MathiasKES/stable-ginv). This portfolio fork preserves the original history and attribution.
+
+**Selected contributions:** [Masking implementation and tests](https://github.com/MathiasKES/stable-ginv/commit/2406cef17bba7a67a2b3cd0708b5b85cd51022d8) · [Parallel GPU restarts](https://github.com/MathiasKES/stable-ginv/commit/442616568eb86f4cb99e65d6aa5e6a1a53746a99) · [Jacobian-rank experiments](https://github.com/MathiasKES/stable-ginv/commit/eaa7ffb29951f74742bb3a438ff3c409d8e89693).
+
+---
+
+## Project documentation
 
 Research codebase for studying gradient inversion attacks on federated learning.
 Bachelor's thesis project — Technical University of Denmark (DTU), 2026.
